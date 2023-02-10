@@ -7,3 +7,8 @@ def solution(sizes):
             sizes[i][0], sizes[i][1] = max(sizes[i][0], sizes[i-1][0]), max(sizes[i][1], sizes[i-1][1])
  
     return sizes[-1][0] * sizes[-1][1]
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+def solution(sizes):
+    return max(max(x) for x in sizes) * max(min(x) for x in sizes)
