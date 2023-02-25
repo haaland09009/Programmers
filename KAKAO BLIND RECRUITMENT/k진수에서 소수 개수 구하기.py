@@ -26,32 +26,32 @@ def solution(n, k):
     return answer
 
 #---------------------------------------------------
-def is_prime_number(x): #  소수 판별 함수
-   if x <= 1:
-       return False
-   for i in range(2, int(x**0.5)+1): #  2 이상인 수 중에서 나누어 떨어지는 것이 하나라도 존재한다면
-       if x % i == 0:
-           return False
-   return True
+# def is_prime_number(x): #  소수 판별 함수
+#    if x <= 1:
+#        return False
+#    for i in range(2, int(x**0.5)+1): #  2 이상인 수 중에서 나누어 떨어지는 것이 하나라도 존재한다면
+#        if x % i == 0:
+#            return False
+#    return True
 
-def k_num(n, k):
-   tmp = ''
-   while n > 0:
-       tmp += str(n % k)
-       n = n // k 
-   return tmp[::-1]   
+# def k_num(n, k):
+#    tmp = ''
+#    while n > 0:
+#        tmp += str(n % k)
+#        n = n // k 
+#    return tmp[::-1]   
        
 
-def solution(n, k):
-   answer = 0
-   result = k_num(n,k)
-   ls = []
-   for i in result.split('0'):
-       ls.append(i)
-   for i in ls:
-       if i == '':
-           continue
-       else:
-           if is_prime_number(int(i)):
-               answer += 1
-   return answer
+# def solution(n, k):
+#    answer = 0
+#    result = k_num(n,k)
+#    ls = []
+#    for i in result.split('0'):
+#        ls.append(i)
+#    for i in ls:
+#        if i == '':
+#            continue
+#        else:
+#            if is_prime_number(int(i)):
+#                answer += 1
+#    return answer
