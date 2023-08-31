@@ -29,3 +29,28 @@ def solution(prices):
                 
         
 #     return answer
+
+
+
+
+#-----------------------------------
+# 8/31
+
+# from collections import deque
+# def solution(prices):
+#     answer = []
+    
+#     q = deque(prices)
+#     time = 0
+    
+#     while q:
+#         now_price = q.popleft()
+#         for other_price in q:
+#             time += 1
+#             if now_price > other_price:
+#                 break
+#         answer.append(time)        
+#         time = 0
+
+    
+#     return answer
