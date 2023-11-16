@@ -1,4 +1,19 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/134240
+
+--------------------------------------------------------------------------------      
+class Solution {
+    public String solution(int[] food) {
+        StringBuilder sb = new StringBuilder();
+        for (int i=1; i<food.length; i++) {
+            int count = food[i] / 2;
+            sb.append(String.valueOf(i).repeat(count));
+        }
+        String answer = sb + "0";
+        return answer + sb.reverse();
+    }
+}
+
+--------------------------------------------------------------------------------     
 import java.util.*;
 class Solution {
     public String solution(int[] food) {
