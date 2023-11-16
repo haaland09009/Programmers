@@ -1,6 +1,7 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/134240
 
 --------------------------------------------------------------------------------      
+
 class Solution {
     public String solution(int[] food) {
         StringBuilder sb = new StringBuilder();
@@ -14,6 +15,7 @@ class Solution {
 }
 
 --------------------------------------------------------------------------------     
+
 import java.util.*;
 class Solution {
     public String solution(int[] food) {
