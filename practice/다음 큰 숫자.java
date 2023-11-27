@@ -47,7 +47,6 @@ class Solution {
         int answer = 0;
         int bitCount = Integer.bitCount(n);
         
-        int count;
         while (true) {
             n++;
             if (bitCount == Integer.bitCount(n)) {
